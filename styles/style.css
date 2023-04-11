@@ -52,6 +52,7 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
+  margin-top: 0;
   margin-bottom: 32px;
 }
 
@@ -59,6 +60,7 @@
   max-width: 532px;
   font-size: 20px;
   line-height: 30px;
+  margin: 0;
 }
 
 .header__image {
@@ -203,11 +205,13 @@
 .person_name_cannon {
   bottom: 18px;
   right: 216px;
+  flex-direction: column-reverse;
 }
 
 .person_name_mitchell {
   left: 142px;
   bottom: 82px;
+  flex-direction: column-reverse;
 }
 
 .person_name_tarter {
@@ -241,6 +245,8 @@
   padding: 100px 0 140px;
   background-image: url("../images/staff_picks_background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .staff__title {
@@ -248,7 +254,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
-  color: #f2f2f2;
+  color: #ffff;
 }
 
 .staff__subtitle {
@@ -257,7 +263,7 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  color: #f2f2f2;
+  color: #ffff;
 }
 
 .staff__cards {
@@ -331,12 +337,12 @@
   margin: 100px 0 0;
   display: flex;
   justify-content: center;
+  gap: 40px;
   /* Add styles */
 }
 
 .step {
   flex-basis: 220px;
-  padding: 0 0 0 40px;
   /* Add styles */
 }
 
@@ -365,6 +371,7 @@
   position: relative;
   box-sizing: border-box;
   z-index: 1;
+  display: flex;
 }
 
 .about__title {
@@ -373,7 +380,6 @@
   line-height: 30px;
   font-weight: 500;
   max-width: 154px;
-  position: absolute;
   z-index: 2;
 }
 
@@ -382,13 +388,16 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  margin: auto;
   padding-left: 120px;
   z-index: 3;
 }
 
 .about__paragraph {
   margin: 0 0 32px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -405,14 +414,12 @@
 .footer {
   box-sizing: border-box;
   background-color: #1f1f1f;
-  color: #f2f2f2;
+  color: #ffff;
   padding: 60px 102px 60px 80px;
 }
 
 .footer__columns {
   display: flex;
-  color: #f2f2f2;
-  min-height: 224px;
 }
 
 .footer__column_content_hours {
